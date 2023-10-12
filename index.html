@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greenlight Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #B5FFCE;
+      background-image: url('imgs/comingsoon.png');
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Gabarito', sans-serif;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-position-x: 75%;  /* Shifted to the right by 25% */
+      }
+    }
+    .header {
+      text-align: center;
+      font-weight: 600;
+      font-size: 96px;
+      margin-top: 50px;
+      color: #40875D;
+    }
+  </style>
+  <script>
+    let imgWidth;
+    window.addEventListener('load', function() {
+      const img = new Image();
+      img.src = 'imgs/comingsoon.png';
+      img.onload = function() {
+        imgWidth = this.width;
+        adjustBackgroundSize();
+      };
+    });
+
+    window.addEventListener('resize', adjustBackgroundSize);
+
+    function adjustBackgroundSize() {
+      if (window.innerWidth > imgWidth) {
+        document.body.style.backgroundSize = '100% auto';
+      } else {
+        document.body.style.backgroundSize = 'auto';
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="header">Greenlight Grid</div>
+</body>
+</html>

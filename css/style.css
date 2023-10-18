@@ -55,3 +55,9 @@
     margin-right: auto;
     display: block;
 }
+
+@media (max-width: 768px) {
+    .additional-info-below-header p {
+        font-size: 16pt;  /* Reduced font size for smaller screens */
+    }
+}

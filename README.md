@@ -2,7 +2,7 @@
 
 # Description:
 
-"GreenlightGrid-AI-Microgrids is an innovative open-source project focused on developing AI-Powered Green Energy Microgrids. It combines cutting-edge technologies in artificial intelligence (AI) and the Internet of Things (IoT) to facilitate decentralized energy management. This repository hosts the code for a dynamic, user-friendly platform that allows individuals to seamlessly buy, store, and sell renewable energy, whether they are connected to the main grid or operating independently.
+"GreenlightGrid is an innovative project focused on developing AI-Powered Green Energy Microgrids. It combines cutting-edge technologies in artificial intelligence (AI) to facilitate decentralized energy management. 
 
 # Key Features:
 
